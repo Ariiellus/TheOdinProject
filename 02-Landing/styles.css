@@ -1,0 +1,186 @@
+.LandingPage {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Container {
+  flex-direction: column;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#Header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderLogo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+.HeaderLinks {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.HeaderLinks a {
+  color: #F9FAF8;
+  text-decoration: none;
+}
+
+#Header, #Footer, #Hero {
+  background-color: #1F2937;
+  display: flex;
+}
+
+#Hero {
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.HeroContainer {  
+  flex: 1;
+  gap: 8px;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #F9FAF8;
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#HeroImage {
+  width: 100%;
+  height: 250´x;
+  background-color: #6D747E;
+}
+
+#HeroText {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+#Content {
+  align-items: center;
+  margin: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.cardContainer{
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  font-size: 18px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.card {
+  justify-items: center;
+  gap: 50px;
+}
+.cardImage {
+  width: 150px;
+  height: 150px;
+  border-color: #3882F6;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 12px;
+  align-items: center;
+}
+
+#Quote {
+  background-color: #E5E7EB;
+  padding-left: 200px;
+  padding-right: 200px;
+}  
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  font-weight: light;
+}
+
+.quoteAuthor {
+  text-align: right;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1F2937;
+}
+
+.CallToActionBox {
+  background-color: #3882F6;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F9FAF8;
+  padding: 20px 100px;
+}
+
+#CallToActionDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.CallToActionTextHeader {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.CallToActionText {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.CallToActionButton button {
+  background-color: transparent;
+  border: 2px solid #F9FAF8;
+  color: #F9FAF8;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+#Footer {
+  align-items: center;
+  font-size: 18px;
+  color: #E5E7EB;
+}
