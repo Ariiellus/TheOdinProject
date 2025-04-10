@@ -74,6 +74,8 @@ function playGame(humanChoice) {
   document.getElementById('Result').innerText = result;
   console.log(humanChoiceName, 'vs', computerChoiceName, "=", result);
   updateImage(computerChoice); 
+
+  updateResults(result);
 }
 
 function updateImage(computerChoice) {
@@ -92,5 +94,48 @@ function updateImage(computerChoice) {
   } else {
     computerBox.src = 'assets/Question.png';
     computerBox.alt = 'Question';
+  }
+}
+
+function updateResults(result) {
+  let playerScore = parseInt(document.getElementById('PlayerPoints').innerText) || 0;
+  let computerScore = parseInt(document.getElementById('ComputerPoints').innerText) || 0;
+
+  if (result === 'You win!') {
+    playerScore += 1; 
+  } else if (result === 'You lose!') {
+    computerScore += 1; 
+  }
+
+  document.getElementById('PlayerPoints').innerText = playerScore;
+  document.getElementById('ComputerPoints').innerText = computerScore;
+
+  matchEnded();
+}
+
+function resetGame() {
+  document.getElementById('PlayerPoints').innerText = 0;
+  document.getElementById('ComputerPoints').innerText = 0;
+
+  document.getElementById('Result').innerText = "Please select an option";
+
+  const options = document.querySelectorAll('.option');
+  options.forEach(option => {
+    option.classList.remove('selected');
+  });
+
+  updateImage(null);
+}
+
+function matchEnded() {
+  let playerScore = parseInt(document.getElementById('PlayerPoints').innerText) || 0;
+  let computerScore = parseInt(document.getElementById('ComputerPoints').innerText) || 0;
+
+  if (playerScore === 5 || computerScore === 5) {
+    alert("Match ended! " + (playerScore === 5 ? "Player" : "Computer") + " wins!");
+
+    console.log("Match ended!");
+
+    resetGame();
   }
 }
