@@ -1,0 +1,42 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#input {
+  width: 280px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+  border-radius: 10px;
+}
+
+.button, .operator {
+  background-color: whitesmoke;
+  color: black;  
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover, .operator:hover {
+  background-color: rgb(58, 168, 252);
+  color: whitesmoke;
+}
+
+.button:active, .operator:active {
+  background-color: rgb(41, 244, 162);
+  color: whitesmoke;  
+}
+
+#clear, #equal {
+  width: 110px;
+}
